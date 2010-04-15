@@ -19,6 +19,12 @@ module SeedFu
         end
       end
 
+      # Fix a bug (issue 9) where chunk_this_seed? was called but not defined
+      # see http://github.com/mbleigh/seed-fu/issues/#issue/9
+      def chunk_this_seed?
+        true
+      end
+
     end
 
   end
